@@ -2,15 +2,15 @@ import { Product } from "../models/products";
 
 export const resolvers = {
   Query: {
-    async getProducts (id: string) {
+    getProducts: async (id: string) => {
       const productID = Number(id)
       return await Product.find({ id: productID }, {}, { hint: 'id_1' }).lean()
     },
-    async getProductInfo (id: string) {
+    getProductInfo: async (id: string) => {
       const productID = Number(id)
       return await Product.find({ id: productID }, {}, { hint: 'id_1' }).lean()
     },
-    async getProductStyles(id: string) {
+    getProductStyles: async (id: string) => {
       const productID = Number(id)
       return await Product.find({ id: productID }, {}, { hint: 'id_1' }).lean()
     }

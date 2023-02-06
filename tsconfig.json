@@ -3,7 +3,7 @@
     "rootDirs": ["src"],
     "outDir": "src/build",
     "lib": ["es2020", "dom", "es2017"],
-    "target": "esnext",
+    "target": "ESNext",
     "module": "NodeNext",
     "moduleResolution": "node",
     "sourceMap": true,
