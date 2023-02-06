@@ -1,14 +1,13 @@
 {
   "compilerOptions": {
     "rootDirs": ["src"],
-    "baseUrl": "src",
     "outDir": "src/build",
     "lib": ["es2020"],
     "target": "es2020",
     "module": "esnext",
     "moduleResolution": "node",
+    "sourceMap": true,
     "esModuleInterop": true,
     "types": ["node"],
   },
-  "include": ["src/graphql/*.ts", "src/graphql/*.d.ts", "src/models/*.ts", "src/models/*.d.ts"],
 }

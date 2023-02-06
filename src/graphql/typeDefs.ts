@@ -37,15 +37,15 @@ export const typeDefs = `#graphql
     }]
   }
 
-  type Query {
-    getProducts(id: id!): Products!
-    getProductInfo(id: id!): ProductInfo!
-    getProductStyles(id: id!): ProductStyles!
-  }
-
   type Sku {
     quantity: Int,
     size: String,
+  }
+
+  type Query {
+    getProducts(): [Products]!
+    getProductInfo(id: id!): ProductInfo!
+    getProductStyles(id: id!): ProductStyles!
   }
 
   input ProductInput {

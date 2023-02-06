@@ -1,4 +1,5 @@
 import { Product } from "../models/products";
+
 export const resolvers = {
   Query: {
     async getProducts (id: string) {
