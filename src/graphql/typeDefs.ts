@@ -48,12 +48,8 @@ export const typeDefs = `#graphql
   }
 
   type Query {
-    getProducts(id: String): [Products]!
-    getProductInfo(id: String): ProductInfo!
-    getProductStyles(id: String): ProductStyles!
-  }
-
-  input ProductInput {
-    id: String
+    getProducts(count: Int, page: Int): [Products]
+    getProductInfo(productId: Int): ProductInfo
+    getProductStyles(productId: Int): ProductStyles
   }
 `;
